@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/logoAux.png">
+</head>
+<body>
+    <nav class="nav__addRentti">
+        <a href="index.html">
+            <span class="material-symbols-outlined">reply</span>
+            <p>Volver al inicio</p>
+        </a>
+        <div class="nav__addRentti-title">
+            <h2>Agregar propiedad</h2>
+        </div>
+    </nav>
+    <main>
+        <div class="add__form">
+            <form>
+                <div class="form__add__input">
+                    <label for="add__file"><h4>Subir imagen</h4></label>    
+                    <input type="file">
+                </div>
+                <div class="form__add__input">
+                    <label for="add__name"><h4>Nombre</h4></label>
+                    <input type="text" id="add__name">
+                </div>
+                <div class="form__add__input">
+                    <label for="add__direction"><h4>Dirección</h4></label>    
+                    <input type="text" id="add__direction">
+                </div>
+                <div class="form__add__input">
+                    <label for="add__room"><h4>No. habitaciones</h4></label>
+                    <input type="text" id="add__room">
+                </div>
+                <div class="form__add__input">
+                    <label for="add__price"><h4>Precio x mes</h4></label>
+                    <input type="text" id="add__price">
+                </div>
+                <div class="form__add__input">
+                    <input type="submit" value="Agregar">   
+                </div>      
+            </form>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo">
+                <img src="assets/logo.svg" alt="logo Rentti">
+            </div>
+            <div class="footer__info">
+                <ul class="footer__ul">
+                    <li class="footer__ul__item"><b>Acerca</b></li>
+                    <li class="footer__ul__item"><a href="#">Acerca de nosotros</a></li>
+                    <li class="footer__ul__item"><a href="#">Fundadores</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__social">
+                <div class="footer__social-item"><img src="assets/twitter.svg" alt="twitter"></div>
+                <div class="footer__social-item"><img src="assets/instagram.svg" alt="instagram"></div>
+                <div class="footer__social-item"><img src="assets/facebook.svg" alt="facebook"></div>
+            </div>
+            <div class="copy">
+                <pre>© 2024 Rentti, Inc.  ·  Privacidad  ·  Términos </pre>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

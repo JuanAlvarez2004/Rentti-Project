@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/logoAux.png">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="#"><h2>RENTTI</h2></a>
+        </div>
+        <div class="nav__menu">
+            <a href="AddRentti.html" class="button__propiedad">
+                Pon tu propiedad en Rentti
+                <span class="material-symbols-outlined">gite</span>
+            </a>
+            <div class="button__user">
+                <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu">
+                    <span class='material-symbols-outlined'>menu</span>
+                    <span class='material-symbols-outlined'>account_circle</span>
+                </label>
+                <div class="open-menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="login.html">Sesión</a></li>
+                        <!-- <li class="menu__item"><a href="#">Chats</a></li> -->
+                        <li class="menu__item"><a href="favs.html">Favoritos</a></li>
+                        <li class="menu__item"><a href="#">Accesibilidad</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </nav>
+
+    <section class="section__msg">
+        <h1>Encuentra el lugar perfecto para vivir tu mejor experiencia universitaria</h1>
+    </section>
+    
+    <section class="search__bar">
+        <div class="search__bar__bar">
+            <input type="text" id="input" placeholder="En Ibagué">
+            <div class="search__bar__bar-filtericon">
+                <input type="checkbox" id="filter__modal">
+                <label for="filter__modal">
+                    <span class="material-symbols-outlined">
+                        tune
+                    </span>
+                </label>
+                <dialog>
+                    <div class="modal-content">
+                        <div class="header__filter">
+                            <button class="close-button" onclick="document.getElementById('filter__modal').checked = false;">
+                                <span class="material-symbols-outlined">close</span>
+                            </button>
+                            <h3>Filtros</h3>
+                        </div>
+
+
+                        <div class="filter-section">
+                            <h4>Tipo de vivienda</h4>
+                            <div class="filter-options">
+                                <button class="filter-option">Cualquier tipo</button>
+                                <button class="filter-option">Casa</button>
+                                <button class="filter-option">Apartamento</button>
+                                <button class="filter-option">Apartaestudio</button>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <h4>Rango de precios</h4>
+                            <div class="price-range">
+                                <button class="quantity-button">-</button>
+                                <span>300.000</span>
+                                <button class="quantity-button">+</button>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <h4>Habitaciones y baños</h4>
+                            <div class="room-options">
+                                <div class="room-option">
+                                    <label>Habitaciones</label>
+                                    <div>
+                                        <button class="quantity-button">-</button>
+                                        <span>1</span>
+                                        <button class="quantity-button">+</button>
+                                    </div>
+                                </div>
+                                <div class="room-option">
+                                    <label>Baños</label>
+                                    <div>
+                                        <button class="quantity-button">-</button>
+                                        <span>1</span>
+                                        <button class="quantity-button">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <h4>Condiciones</h4>
+                            <div class="conditions">
+                                <button class="condition-option"> <span class="material-symbols-outlined">pets</span> Se permiten mascotas</button>
+                                <button class="condition-option"><span class="material-symbols-outlined">receipt_long</span> Servicios incluidos</button>
+                                <button class="condition-option"><span class="material-symbols-outlined">chair</span> Muebles incluidos</button>
+                            </div>
+                        </div>
+                        <div class="apply-filters">
+                            <button class="apply-button">
+                                <span class="material-symbols-outlined">filter_alt</span> Aplicar filtros
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+            <div class="search__bar__bar-searchicon">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="grid">
+            <div class="grid__item-container">
+                <span class="material-symbols-outlined">favorite</span>
+                <a class="grid__item" href="viewHouse.html">
+                    <div class="grid__item__img">
+                        <img src="https://static.mujerhoy.com/www/multimedia/202402/27/media/cortadas/eladio-principal-kacB-U2101662330391yxD-1248x1248@MujerHoy.jpg" alt="Eladio">
+                    </div>
+                    <div class="grid__item__info">
+                        <div class="grid__item__info-description">
+                            <ul class="description-ul">
+                                <li class="description-li"><b>Eladio Carrion</b></li>
+                                <li class="description-li">Más información</li>
+                                <li class="description-li">1.000.000 $ / mes</li>
+                            </ul>
+                        </div>
+                        <div class="grid__item__info-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <p>5.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item-container">
+                <span class="material-symbols-outlined">favorite</span>
+                <a class="grid__item" href="viewHouse.html">
+                    <div class="grid__item__img">
+                        <img src="https://dentrodelgenero.com/wp-content/uploads/2023/08/ELADIO-CARRION-PRENSA-NEW-2-copia.jpg" alt="Eladio">
+                    </div>
+                    <div class="grid__item__info">
+                        <div class="grid__item__info-description">
+                            <ul class="description-ul">
+                                <li class="description-li"><b>Eladio Carrion</b></li>
+                                <li class="description-li">Más información</li>
+                                <li class="description-li">1.000.000 $ / mes</li>
+                            </ul>
+                        </div>
+                        <div class="grid__item__info-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <p>5.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item-container">
+                <span class="material-symbols-outlined">favorite</span>
+                <a class="grid__item" href="viewHouse.html">
+                    <div class="grid__item__img">
+                        <img src="https://esports.as.com/2023/07/27/bonus/influencers/Eladio-Carrion-Kings-League-latinoamerica_1705639424_1158609_1440x600.jpg" alt="Eladio">
+                    </div>
+                    <div class="grid__item__info">
+                        <div class="grid__item__info-description">
+                            <ul class="description-ul">
+                                <li class="description-li"><b>Eladio Carrion</b></li>
+                                <li class="description-li">Más información</li>
+                                <li class="description-li">1.000.000 $ / mes</li>
+                            </ul>
+                        </div>
+                        <div class="grid__item__info-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <p>5.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item-container">
+                <span class="material-symbols-outlined">favorite</span>
+                <a class="grid__item" href="viewHouse.html">
+                    <div class="grid__item__img">
+                        <img src="https://i.pinimg.com/564x/91/31/00/91310082a9d3c3182fafc2d89fbe9f8a.jpg" alt="Eladio">
+                    </div>
+                    <div class="grid__item__info">
+                        <div class="grid__item__info-description">
+                            <ul class="description-ul">
+                                <li class="description-li"><b>Eladio Carrion</b></li>
+                                <li class="description-li">Más información</li>
+                                <li class="description-li">1.000.000 $ / mes</li>
+                            </ul>
+                        </div>
+                        <div class="grid__item__info-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <p>5.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item-container">
+                <span class="material-symbols-outlined">favorite</span>
+                <a class="grid__item" href="viewHouse.html">
+                    <div class="grid__item__img">
+                        <img src="https://s2.abcstatics.com/abc/www/multimedia/play/2024/02/27/eladio-carrion-kalF-U6013832163559HI-1200x840@diario_abc.jpg" alt="Eladio">
+                    </div>
+                    <div class="grid__item__info">
+                        <div class="grid__item__info-description">
+                            <ul class="description-ul">
+                                <li class="description-li"><b>Eladio Carrion</b></li>
+                                <li class="description-li">Más información</li>
+                                <li class="description-li">1.000.000 $ / mes</li>
+                            </ul>
+                        </div>
+                        <div class="grid__item__info-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <p>5.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item-container">
+                <span class="material-symbols-outlined">favorite</span>
+                <a class="grid__item" href="viewHouse.html">
+                    <div class="grid__item__img">
+                        <img src="https://images.adsttc.com/media/images/5d34/e507/284d/d109/5600/0240/large_jpg/_FI.jpg?1563747560" alt="Eladio">
+                    </div>
+                    <div class="grid__item__info">
+                        <div class="grid__item__info-description">
+                            <ul class="description-ul">
+                                <li class="description-li"><b>Eladio Carrion</b></li>
+                                <li class="description-li">Más información</li>
+                                <li class="description-li">1.000.000 $ / mes</li>
+                            </ul>
+                        </div>
+                        <div class="grid__item__info-rating">
+                            <span class="material-symbols-outlined">star</span>
+                            <p>5.0</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__logo">
+                <img src="assets/logo.svg" alt="logo Rentti">
+            </div>
+            <div class="footer__info">
+                <ul class="footer__ul">
+                    <li class="footer__ul__item"><b>Acerca</b></li>
+                    <li class="footer__ul__item"><a href="#">Acerca de nosotros</a></li>
+                    <li class="footer__ul__item"><a href="#">Fundadores</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__social">
+                <div class="footer__social-item"><img src="assets/twitter.svg" alt="twitter"></div>
+                <div class="footer__social-item"><img src="assets/instagram.svg" alt="instagram"></div>
+                <div class="footer__social-item"><img src="assets/facebook.svg" alt="facebook"></div>
+            </div>
+            <div class="copy">
+                <pre>© 2024 Rentti, Inc.  ·  Privacidad  ·  Términos </pre>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
